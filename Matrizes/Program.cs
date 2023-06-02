@@ -4,7 +4,7 @@ namespace Matrizes {
     class Program {
         static void Main(string[] args) {
 
-            int cont = 0;
+            int count = 0;
 
             Console.Write("Qual é a ordem da matriz? ");
             int n = int.Parse(Console.ReadLine());
@@ -17,7 +17,7 @@ namespace Matrizes {
                 for (int j = 0; j < n; j++) {
                     mat[i, j] = int.Parse(values[j]);
                     if (mat[i, j] < 0) {
-                        cont++;
+                        count++;
                     }
                 }
             }
